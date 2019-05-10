@@ -1,0 +1,263 @@
+
+/* Default Theme
+Fonts:Raleway & Open Sans */
+/* h1{
+    font-family: "Raleway", sans-serif;
+} */
+/* Generic CSS 
+==============================================
+              Html,Body
+============================================
+*/
+html,body{
+    height:100%;
+
+}
+
+body{
+    color:#212226;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+}
+p{
+    font-family: "open sans",sans-serif;
+    font-size:13px;
+    font-weight:400;
+    line-height: 24px;
+}
+section{
+    background:#fff;
+    overflow: hidden;
+}
+/* preloader */
+#preloader { 
+ background-color:white;
+ position: fixed;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ z-index: 9999;
+}
+#status{
+    background-image: url("../img/preloader/preloader.gif") ;
+    background-repeat: no-repeat;
+    width:70px;
+    height:70px;
+    position:absolute;
+     top:50%;
+     right:50%;
+     margin-top:-35px;
+     margin-right:-35px;
+}
+#home{
+    background:none;
+}
+#home-bg-video{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -ms-transform:translateX(-50%) translateY(-50%);
+    -o-transform:translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
+    z-index:-1;
+    background:url("../video/solo.jpg") no-repeat;
+    background-size:cover;
+}
+#home-overlay{
+    background-color:rgba(0,0,0,0.8);
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    z-index:-1;
+}
+#home-content {
+    width:100%;
+    height: 100vh;
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1{
+    color:#fff;
+    font-size:65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin:0;
+    display: inline-block;
+
+}
+#home-heading h1 span{
+    color:#f4c613;
+    font-weight:500;
+}
+#home-text p{
+    color:white;
+    font-size:17px;
+    font-weight: 100;
+    margin:8px 0px 30px 0px;
+}
+/* buttons */
+.btn-btn-general-btn-home{
+ color:#fff;
+}
+.btn-general{
+    font-family: 'Raleway', sans-serif;
+    border-radius:28px;
+    text-transform: uppercase;
+    margin:0 6px;
+    padding:12px 46px 12px 46px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+
+}
+
+.btn-home{
+    color:white;
+    border:1px solid #fff;
+}
+.btn-home:hover, .btn-home:focus{
+  color:#fff;
+  background-color: #f4c613;
+  border:1px solid #f4c613;
+
+}
+#arrow-down{
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    color:#fff;
+    font-size: 32px;
+    width:32px;
+    height: 32px;
+
+}
+/* ==============================================================
+                   Content Boxes
+================================================================*/
+.content-box-lg{
+    padding: 120px 0 120px 0;
+}
+
+/* ==============================================================
+                   Vertical Headings
+================================================================*/
+.vertical-heading h5{
+    color:#f4c613;
+    font-size:14px;
+    font-weight:500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display:inline-block;
+    transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    position: relative;
+    top:60px;
+    left:-63px;
+}
+.vertical-heading h2{
+    margin:0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+/* ==============================================================
+                   About Section
+================================================================*/
+
+
+
+#about-right p:first-child{
+  margin-bottom:30px;
+}
+#about-bottom{
+    margin-top:60px;
+}
+#about-bottom img{
+    margin: 0 auto;
+}
+/* hover state */
+.about-item:hover{
+background-color: #f4c613;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color:#fff;
+}
+.about-item i{
+    font-size: 24px;
+    padding-top: 30px;
+}
+.about-item h3{
+    font-weight: 300;
+    line-height: 16px;
+    padding-top:10px;
+}
+.about-item hr{
+    width: 35px;
+    height: 2.5px;
+    background-color: #f4c613;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+.about-item:hover{
+    font-size:50px;
+}
+/* smooth transistion */
+.about-item{
+    margin:35px 0 120px 0;
+    background-color: #fff;
+    transition:all 400ms ease-in-out;
+    /*chrome*/-webkit-transition:all 400ms ease-in-out;
+    /*mozilla*/-moz-transition:all 400ms ease-in-out;
+    /*IE*/-ms-transition:all 400ms ease-in-out;
+    /*safari*/-o-transition:all 400ms ease-in-out;
+    -webkit-transition:all 400ms ease-in-out;
+    -moz-transition:all 400ms ease-in-out;
+    -ms-transition:all 400ms ease-in-out;
+    -o-transition:all 400ms ease-in-out;
+}
+#about-02{
+    background-color:whitesmoke;
+    padding:20px 0 20px 0;
+    cursor: pointer;
+}
+.col-md-4 p{
+    padding-bottom: 50px;
+}
+.container1{
+    background-color: lightslategray;
+    margin:auto 30px;
+}
+#form{
+    margin:20px auto;
+    padding: 29px 60px 60px 22px;
+}
